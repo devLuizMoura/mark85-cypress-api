@@ -12,11 +12,11 @@ describe('POST /users', () => {
 
     const user = this.users.create
 
-    cy.task('deleteUser', user.email)    //Garante que a massa não exista antes de iniciar o teste fazendo uma busca no banco, deletando caso exista
+    cy.task('removeUser', user.email)    //Garante que a massa não exista antes de iniciar o teste fazendo uma busca no banco, deletando caso exista
 
     cy.postUser(user)
       .then(response => {
-        expect(response.status).to.eq(200)
+        expect(response.status).to.eq(201)
       })
 
   })
@@ -25,7 +25,7 @@ describe('POST /users', () => {
 
     const user = this.users.duplicateEmail
 
-    cy.task('deleteUser', user.email)   //Garante que a massa não exista antes de iniciar o teste fazendo uma busca no banco, deletando caso exista
+    cy.task('removeUser', user.email)   //Garante que a massa não exista antes de iniciar o teste fazendo uma busca no banco, deletando caso exista
 
     cy.postUser(user)     //Cadastra previamente o usuario para garantir que ele exista no banco
 
@@ -44,7 +44,7 @@ describe('POST /users', () => {
 
     let user
 
-    beforeEach(function(){        //Executa antes de cada teste, reiniciando a massa de teste
+    beforeEach(function () {        //Executa antes de cada teste, reiniciando a massa de teste
       user = this.users.required
     })
 

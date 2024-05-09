@@ -10,7 +10,7 @@ describe('POST /sessions', () => {
 
         const userData = this.users.login
 
-        cy.task('deleteUser', userData.email)           //Refinamento da massa de dados
+        cy.task('removeUser', userData.email)           //Refinamento da massa de dados
         cy.postUser(userData)
 
         cy.postSession(userData)

@@ -1,0 +1,27 @@
+{
+    "create": {
+        "user": {
+            "name": "Luiz Moura",
+            "email": "luizmoura.dev@gmail.com",
+            "password": "pwd123"
+        },
+        "task": {
+            "name": "Pagar fatura",
+            "tags": [
+                "C6",
+                "Boleto",
+                "Bancos"
+            ]
+        }
+    },
+    "duplicate": {
+        "user": {
+            "name": "Jean Grey",
+            "email": "fenix@xman.com",
+            "password": "pwd123"
+        },
+        "task": {
+            "name": "Fazer compras no mercado"
+        }
+    }
+}
