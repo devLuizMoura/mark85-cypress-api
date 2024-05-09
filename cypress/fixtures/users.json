@@ -1,0 +1,30 @@
+{
+    "login": {
+        "name": "Jennifer Tinder",
+        "email": "jennifer@qa.com",
+        "password": "pwd123"
+    },
+    "inv_pass": {        
+        "email": "jennifer@qa.com",
+        "password": "pwd1234"
+    },
+    "email_404": {        
+        "email": "404@qa.com",
+        "password": "pwd1234"
+    },
+    "create":{
+        "name": "Otavio Teste",
+        "email": "otavio@qa.com",
+        "password": "pwd123"
+    },
+    "duplicateEmail":{
+        "name": "Vanessa Teste",
+        "email": "vanessa@qa.com",
+        "password": "pwd123"
+    },
+    "required":{
+        "name": "Margot Test",
+        "email": "margot@qa.com",
+        "password": "pwd123"
+    }
+}
